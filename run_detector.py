@@ -4,6 +4,9 @@ def detect_runs(prices, run_length):
     A 'BUY' signal is generated after a negative run of `run_length`.
     A 'SELL' signal is generated after a positive run of `run_length`.
 
+    This function can be applied to any stock market data, including NSE tickers
+    (e.g., RELIANCE.NS, INFY.NS).
+
     Args:
         prices (list of float/int): The historical prices.
         run_length (int): The number of consecutive periods of increase/decrease to trigger a signal.
